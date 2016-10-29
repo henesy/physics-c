@@ -1,9 +1,16 @@
-#should make a real mkfile with imports and whatnot like the cool kids
+</$objtype/mkfile
 
-all: 
-	echo Building Library
-	6c physics.c
+#see: mk(1)
 
-clean:
-	rm *.6
+
+physics:	physics.c error.c
+	$CC $CFLAGS -o $target $prereq
+
+%.$O:	%.c
+	rm $stem.$O
+
+clean:	
+	rm *.$O
+
+nuke:V:	clean
 
