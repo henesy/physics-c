@@ -1,2 +1,2 @@
-Physics utility written in C
+Physics Utilitarian Library in C
 
