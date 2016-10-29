@@ -1,5 +1,8 @@
 /* gravity constant */
 #define G 9.81
+/* unit conversions shortcuts */
+#define ftom(x) x * 0.3048
+#define mtof(x) x * 3.281
 
 
 /* enumerated type to represent direction */
@@ -26,6 +29,7 @@ typedef struct
 	double	u; /* uncertainty value */
 	double	v; /* numerically measured value */
 } Uncertainty;
+
 
 /*** exported function prototypes ***/
 /* error.c */
