@@ -29,14 +29,14 @@ typedef struct
 /* represent uncertainty values */
 typedef struct
 {
-	double	u; /* uncertainty value */
+	double	u; /* uncertainty quantity */
 	double	v; /* numerically measured value */
 } Uncertainty;
 
 
 /*** exported function prototypes ***/
 /* error.c */
-Uncertainty prop_add(a Uncertainty, b Uncertainty);
+Uncertainty propadd(Uncertainty, Uncertainty);
 
 
 #endif
