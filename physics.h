@@ -1,3 +1,6 @@
+#ifndef PHYS_H
+#define PHYS_H
+
 /* gravity constant */
 #define G 9.81
 /* unit conversions shortcuts */
@@ -35,3 +38,5 @@ typedef struct
 /* error.c */
 Uncertainty prop_add(a Uncertainty, b Uncertainty);
 
+
+#endif
