@@ -14,3 +14,6 @@ clean:
 
 nuke:V:	clean
 
+bind:
+	bind -a /sys/bnet/docs/physics /sys/hg/physics-c/doc
+
